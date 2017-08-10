@@ -1,0 +1,62 @@
+@media screen and (max-width: 850px) {
+	body, html {
+		font-size: 1em;
+	}
+	.main__title h1 {
+		font-size: 4em;
+	}
+	.main__title h2 {
+		font-size: 2em;
+	}
+	.title3 {
+		top: calc(50% - 2em - 500px/2);
+	}
+	.contacts h2 {
+		font-size: 2em;
+	}
+	.contacts span {
+		font-size: 1.5em;
+	}
+	.contacts .mail {
+		font-size: 1em;
+	}
+	.contacts__icons i {
+		font-size: 1.5em;
+	}
+	.content {
+		padding: 25px;
+	}
+	.track__field {
+		font-size: 1.2em;
+	}
+	.list__item {
+		line-height: 1.5em;
+		padding: 20px 0 20px 5px;
+	}
+	.list__item--subitem {
+		margin-left: 5px;
+	}
+}
+@media screen and (max-width: 601px) {
+	.img-5 {
+		background-image: none;
+		background-color: #2E2D4C;
+	}
+	.main__title h1 {
+		font-size: 3em;
+	}
+}
+@media screen and (max-height: 400px) {
+	.contacts {
+		top: calc( 50% - (( 3em + 15px + 2.5em + 10px + 2.5em + 2.5em + 10px )/2 ));
+	}
+	.contacts h2 {
+		padding-bottom: 15px;
+	}
+	.contacts span {
+		padding: 10px;
+	}
+	.contacts__icons i {
+		padding: 10px 15px 0 15px;
+	}
+}

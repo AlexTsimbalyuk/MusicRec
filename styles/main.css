@@ -1,0 +1,188 @@
+@font-face { 
+	font-family: 'Anton'; 
+	src: url('../fonts/Anton/Anton-Regular.woff') format('woff'); 
+	font-weight: normal; 
+	font-style: normal; 
+}
+@font-face { 
+	font-family: 'Russo'; 
+	src: url('../fonts/Russo/RussoOne-Regular.woff') format('woff'); 
+	font-weight: normal; 
+	font-style: normal; 
+}
+@font-face { 
+	font-family: 'Yanone'; 
+	src: url('../fonts/Yanone/YanoneKaffeesatz-Regular.woff') format('woff'); 
+	font-weight: normal; 
+	font-style: normal; 
+}
+* {
+	box-sizing: border-box;
+}
+body, html {
+	width: 100%;
+	height: 100%;
+	background-color: #FBF8EF;
+	font-family: 'Yanone', sans-serif;
+	font-size: 1.1em;
+	font-weight: normal; 
+	letter-spacing: 0.1em;
+	line-height: 1.2em;
+	color: black;
+	animation-name: loading;
+	animation-duration: 1.5s;
+	letter-spacing: 0.1em;
+	text-align: justify;
+}
+@keyframes loading {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+p { 
+    text-indent: 1em;
+}
+.main {
+	position: relative;
+	background: no-repeat center fixed;
+	background-size: cover;
+}
+.main__title {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+.title1 {
+	top: calc(50% - 0.5em);
+}
+.title2 {
+	top: calc(50% - 3em);
+}
+.title3 {
+	top: calc(50% - 6em/2 - 300px/2 - 10%);
+}
+.main__title h1 {
+	font-family: 'Anton', sans-serif;
+	font-size: 6em;
+	color: #FFCC33;
+	font-weight: bold; 
+	letter-spacing: 0.1em; 
+	text-shadow: 0 0 5px black, 0 0 5px black;
+}
+.main__title h2 {
+	font-family: 'Russo', sans-serif;
+	font-size: 3em;
+	color: #FFCC33;
+	text-shadow: 0 0 10px black; 
+	text-transform: uppercase;
+	line-height: 1.2em;
+}
+.img-1 {
+	background-image: url("../images/main/1.jpg");
+	min-height: 100%;
+}
+.img-2 {
+	background-image: url("../images/main/2.jpg");
+	min-height: 450px;
+}
+.img-3 {
+	background-image: url("../images/main/3.jpg");
+	min-height: 450px;
+}
+.img-4, .img-5 {
+	background-image: url("../images/main/4.jpg");
+	min-height: 100%;
+}
+.content {
+	padding: 50px;
+}
+.content__title {
+	text-align: center;
+	font-weight: bold; 
+	line-height: 1.5em;
+	color: #808080;
+	padding-bottom: 20px;
+}
+.content span {
+	font-weight: bold; 
+	color: #808080;
+}
+.content p {
+	padding: 3px;
+}
+.list__item {
+	list-style-type: square;
+	font-weight: bold; 
+	line-height: 2em;
+	color: #808080;
+	padding: 15px 0 20px 20px;
+	border-bottom: 1px solid #DCDCDC;
+}
+.list__item span {
+	font-size: 1em;
+	font-weight: normal; 
+	color: black;	
+}
+.list__item:first-child {
+	padding-top: 0
+}
+.list__item:last-child {
+	border: 0;
+	padding-bottom: 0;
+}
+.list__item--subitem {
+	list-style-type: disc;
+	font-weight: normal; 
+	line-height: 1.2em;
+	color: black;
+	margin-left: 25px;
+}
+.contacts {
+	position: absolute;
+	top: calc( 50% - (( 3em + 70px + 2.5em + 20px + 2.5em + 2.5em + 50px )/2 ));
+	width: 100%;
+	text-align: center;
+}
+.contacts h2 {
+	font-family: 'Russo', sans-serif;
+	font-size: 3em;
+	color: #FFCC33;
+	text-shadow: 0 0 10px black; 
+	text-transform: uppercase;
+	padding-bottom: 70px;
+}
+.contacts span {
+	font-size: 2.5em;
+	color: #FFCC33;
+	text-shadow: 0 0 10px black; 
+	padding: 20px 0 20px 0;
+	font-weight: bold; 
+	line-height: 1.2em;
+}
+.contacts .mail {
+	font-family: 'Yanone', sans-serif;
+	font-size: 1.2em;
+}
+.contacts__icons i {
+	font-size: 2.5em;
+	color: #FFCC33;
+	text-shadow: 0 0 10px black;
+	padding: 50px 15px 0 15px;
+}
+.top {
+	position: fixed;
+	bottom: 50px;
+	right: 10px;
+	background-image: url("../images/scroll/top.png");
+	width: 50px;
+	height: 50px;
+	visibility: hidden;
+}
+.top:hover {
+	cursor: pointer;
+}
+.visible {
+	visibility: visible;
+}
+.min_height {
+	display: block;
+}

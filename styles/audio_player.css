@@ -1,0 +1,53 @@
+.player {
+	position: relative;
+	padding-bottom: 1px;
+}
+.track {
+	width: 100%;
+	height: 56px;
+	position: relative;
+	margin: -1px;
+}
+.track:nth-child(odd) {
+	background-color: #EFEFEF;
+}
+.track__button {
+	width: 56px;
+	height: 100%;
+	position: absolute;
+	background-image: url("../images/audio_player/play.png");
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.track__button:hover {
+	background-color: rgba(255, 204, 51, 0.5);
+}
+.track__field {
+	width: calc(100% - 56px);
+	height: 100%;
+	position: absolute;
+	left: 56px;
+	border-left: none;
+	border-right: none;
+	line-height: 0.9em;
+	padding: 3px 0 0 5px;
+}
+.track__field--song {
+	font-size: 18px;
+}
+.track__field--artist {
+	font-size: 14px;
+	color: #808080;
+}
+.track__field--time {
+	background-image: url("../images/audio_player/clock.png");
+	background-repeat: no-repeat;
+	font-size: 12px;
+}
+.track__field--time--minutes {
+	padding-left: 25px;
+}
+.active {
+	background-color: rgba(255, 204, 51, 0.5);
+	background-image: url("../images/audio_player/stop.png"); 
+}
